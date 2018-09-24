@@ -1,0 +1,20 @@
+{
+    "name": "tageso/api-response",
+    "description": "Lumen API Response Class and Middelware",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "soeren",
+            "email": "hello@kekskurse.de"
+        }
+    ],
+    "require": {
+        "laravel/lumen-framework": "5.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TaGeSo\\APIResponse\\": ""
+        }
+    }
+}
