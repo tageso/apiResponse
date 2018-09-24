@@ -22,5 +22,7 @@ class Middelware
                 "data" => $res->getData()
             ]));
         }
+
+        return $res;
     }
 }

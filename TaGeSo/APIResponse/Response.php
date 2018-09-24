@@ -1,7 +1,7 @@
 <?php
 namespace TaGeSo\APIResponse;
 
-class Response extends Illuminate\Http\Response
+class Response extends \Illuminate\Http\Response
 {
     public $data = [];
 
