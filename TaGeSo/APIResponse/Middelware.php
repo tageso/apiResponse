@@ -4,7 +4,7 @@ namespace TaGeSo\APIResponse;
 
 use Closure;
 
-class ExampleMiddleware
+class Middelware
 {
     /**
      * Handle an incoming request.
