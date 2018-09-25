@@ -21,6 +21,7 @@ class Middelware
             $res = $res->setContent(json_encode([
                 "data" => $res->getData()
             ]));
+            $res = $res->header("content-type", "application/json");
         }
 
         return $res;
