@@ -7,6 +7,7 @@ class Response extends \Illuminate\Http\Response
 
     public function withData($data) {
         $this->data = $data;
+        return $this;
     }
 
     public function getData() {
