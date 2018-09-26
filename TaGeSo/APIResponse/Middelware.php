@@ -18,9 +18,15 @@ class Middelware
         $res = $next($request);
 
         if(is_a($res, \TaGeSo\APIResponse\Response::class)) {
-            $res = $res->setContent(json_encode([
+            $returnData = [
                 "data" => $res->getData()
-            ]));
+            ];
+
+            if($res->getPagination() !== null) {
+                $returnData["pagination"] = $res->getPagination();
+            }
+
+            $res = $res->setContent(json_encode($returnData));
             $res = $res->header("content-type", "application/json");
         }
 
