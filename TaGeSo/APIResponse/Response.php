@@ -30,4 +30,16 @@ class Response extends \Illuminate\Http\Response
     public function getPagination() {
         return $this->paginationData;
     }
+
+    public function getCache() {
+        return [
+            "data" => $this->data,
+            "paginationData" => $this->paginationData
+        ];
+    }
+
+    public function setCache($cache) {
+        $this->data = $cache["data"];
+        $this->paginationData = $cache["paginationData"];
+    }
 }
