@@ -31,14 +31,14 @@ class Response extends \Illuminate\Http\Response
         return $this->paginationData;
     }
 
-    public function getCache() {
+    public function getCacheData() {
         return [
             "data" => $this->data,
             "paginationData" => $this->paginationData
         ];
     }
 
-    public function setCache($cache) {
+    public function setCacheData($cache) {
         $this->data = $cache["data"];
         $this->paginationData = $cache["paginationData"];
         return $this;
