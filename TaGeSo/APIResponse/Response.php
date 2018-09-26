@@ -39,6 +39,7 @@ class Response extends \Illuminate\Http\Response
     }
 
     public function setCacheData($cache) {
+        $this->header("X-Application-Cache", 1);
         $this->data = $cache["data"];
         $this->paginationData = $cache["paginationData"];
         return $this;
