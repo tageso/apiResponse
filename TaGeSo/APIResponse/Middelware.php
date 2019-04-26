@@ -19,7 +19,9 @@ class Middelware
 
         if(is_a($res, \TaGeSo\APIResponse\Response::class)) {
             $returnData = [
-                "data" => $res->getData()
+                "data" => $res->getData(),
+                "success" => $res->getStatus(),
+                "msg" => $res->gesMessage()
             ];
 
             if($res->getPagination() !== null) {
