@@ -21,7 +21,7 @@ class Middelware
             $returnData = [
                 "data" => $res->getData(),
                 "success" => $res->getStatus(),
-                "msg" => $res->gesMessage()
+                "msg" => $res->getMessage()
             ];
 
             if($res->getPagination() !== null) {
