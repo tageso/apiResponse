@@ -9,9 +9,6 @@
             "email": "hello@kekskurse.de"
         }
     ],
-    "require": {
-        "laravel/lumen-framework": "5.*"
-    },
     "autoload": {
         "psr-0": {
             "TaGeSo\\APIResponse\\": ""
